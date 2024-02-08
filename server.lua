@@ -2,7 +2,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 QBCore.Commands.Add('Pmanager', 'manage player', {}, false, function(source, args)
     TriggerClientEvent('core-playermanagement:client:openmenu', source)
 end, 'admin')
-command
+
 QBCore.Functions.CreateCallback('core-playermanagement:server:getallgang', function(source, cb, args)
     local gangs = {}
     for k, v in pairs(QBCore.Shared.Gangs) do
